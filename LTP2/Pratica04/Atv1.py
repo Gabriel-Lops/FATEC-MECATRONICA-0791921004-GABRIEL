@@ -1,3 +1,4 @@
+
 #Lista vazia com as temperaturas
 # temperaturas = [23, 5, -6, 34]
 temperaturas = []
@@ -13,3 +14,27 @@ while contador < 5:
   #Só para ver o comportamento da lista entre as interações
   print(temperaturas)
   contador += 1 #contador = contador + 1
+
+#Encontrar o maior Valor
+maior = max(temperaturas)
+print('Maior valor:', maior)
+
+#Encontra o menor valor
+menor = min(temperaturas)
+print('Menor valor:', menor)
+
+#Calcula o valor médio, pela somatória e a contagem de elementos
+media = sum(temperaturas)/ len(temperaturas)
+print('Temperatura média:', media)
+#Controla o formato de exibição da media
+print('Temperatura média: %.3f' % (media))
+
+#Coloca a lista em ordem
+temperaturas.sort()
+print('Ordenação Crescente:')
+print(temperaturas)
+
+#Ordenação decrescente
+temperaturas.sort(reverse=True)
+print('Ordenação Decrescente:')
+print(temperaturas)
